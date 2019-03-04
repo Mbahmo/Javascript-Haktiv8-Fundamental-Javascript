@@ -1,0 +1,55 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Anthony</title>
+        <style>
+            *{
+                transition: ease-in-out 0.5s;
+            }
+            .blink_me {
+                animation: blinker 0.3s linear infinite;
+            }
+            div {
+                border: 1px solid green;
+                max-width: 11%;
+                margin: auto;
+                line-height: 2em;
+            }
+            div:hover{
+                line-height: 10em;
+            }
+            .mantap p {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 18px;
+            }
+            @keyframes blinker {
+                100% {
+                    opacity: 0;
+                }
+            }
+            body {
+                text-align: center;
+            }
+            @media screen and (max-width:980px){
+                .mantap p {
+                font-size: 15px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <marquee class="blink_me">
+            <h1 style="font-size:32px;color:green;">Biodata</h1>
+        </marquee>
+        <div class="mantap">
+            <p>
+            <strong>Nama :</strong>
+            Anthony Lee<br>
+            <strong>Alamat :</strong>
+            Denpasar
+            </p>
+        </div>
+    </body>
+</html>
