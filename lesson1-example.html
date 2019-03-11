@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pengenalan Javascript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <h1></h1>
+        <div class="test">Ini Teks</div>
+        <button onclick="cek();" value="TESt">test</button>
+        <button onclick="hitung();">Hitung 1-10</button>
+    </body>
+    <script>
+        // document
+        //     .querySelector('h1')
+        //     .textContent = "hello world";
+        // const inputValue = document
+        //     .querySelector('#data')
+        //     .value;
+        // console.log(inputValue);
+
+    function cek(){
+        var date = new Date();
+        var cek = date.getDay();
+        
+        var x  = document.getElementsByClassName("test")
+        if(cek == 1){
+            alert('saya sekolah');
+            x[0].innerHTML = "saya sekolah";
+        } else {
+            alert('main ps gan')
+            document.getElementsByClassName("test")[0].innerHTML = "main ps gan";
+        }
+
+    }
+    function hitung(){
+        
+        let y = [];
+        for(let a = 1; a <= 10; a++){
+            y[a-1] = a;
+            // alert(text);
+        }
+        
+        var text = y.join();
+        document.getElementsByClassName("test")[0].innerHTML = text;
+
+    }
+    </script>
+</html>
